@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux," />
 
 
 
@@ -93,12 +93,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="devswiki">
-<meta property="og:url" content="http://pingf.github.io/tags/python/index.html">
+<meta name="description" content="使用ssh做反向隧道的方式非常容易, 1ssh -o PubkeyAuthentication=no &amp;lt;user&amp;gt;@&amp;lt;ip&amp;gt; -p &amp;lt;ssh_port&amp;gt; -D &amp;lt;tunnel_port&amp;gt; -f -C -q -N 之后, 用switchy_omega之类的工具来配置就可以，隧道是socks5协议的，配置起来和shadowsocks类似">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ssh反向代理">
+<meta property="og:url" content="http://pingf.github.io/2017/07/26/ssh反向代理/index.html">
 <meta property="og:site_name" content="devswiki">
+<meta property="og:description" content="使用ssh做反向隧道的方式非常容易, 1ssh -o PubkeyAuthentication=no &amp;lt;user&amp;gt;@&amp;lt;ip&amp;gt; -p &amp;lt;ssh_port&amp;gt; -D &amp;lt;tunnel_port&amp;gt; -f -C -q -N 之后, 用switchy_omega之类的工具来配置就可以，隧道是socks5协议的，配置起来和shadowsocks类似">
+<meta property="og:updated_time" content="2017-07-26T08:08:05.011Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="devswiki">
+<meta name="twitter:title" content="ssh反向代理">
+<meta name="twitter:description" content="使用ssh做反向隧道的方式非常容易, 1ssh -o PubkeyAuthentication=no &amp;lt;user&amp;gt;@&amp;lt;ip&amp;gt; -p &amp;lt;ssh_port&amp;gt; -D &amp;lt;tunnel_port&amp;gt; -f -C -q -N 之后, 用switchy_omega之类的工具来配置就可以，隧道是socks5协议的，配置起来和shadowsocks类似">
 
 
 
@@ -126,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://pingf.github.io/tags/python/"/>
+  <link rel="canonical" href="http://pingf.github.io/2017/07/26/ssh反向代理/"/>
 
 
 
 
 
-  <title>标签: python | devswiki</title>
+  <title>ssh反向代理 | devswiki</title>
   
 
 
@@ -157,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -275,72 +280,184 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>python<small>标签</small>
-      </h1>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/05/dash学习笔记1/" itemprop="url">
-              
-                <span itemprop="name">dash学习笔记1</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-05T14:54:01+08:00"
-              content="2017-07-05" >
-          07-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/04/使用python获取ip的几种方式/" itemprop="url">
-              
-                <span itemprop="name">使用python获取ip的几种方式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-04T18:22:38+08:00"
-              content="2017-07-04" >
-          07-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://pingf.github.io/2017/07/26/ssh反向代理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dameng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/375315?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="devswiki">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ssh反向代理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-26T16:06:38+08:00">
+                2017-07-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/26/ssh反向代理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/07/26/ssh反向代理/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>使用ssh做反向隧道的方式非常容易,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -o PubkeyAuthentication=no &lt;user&gt;@&lt;ip&gt; -p &lt;ssh_port&gt; -D &lt;tunnel_port&gt; -f -C -q -N</div></pre></td></tr></table></figure>
+<p>之后, 用switchy_omega之类的工具来配置就可以，隧道是socks5协议的，配置起来和shadowsocks类似</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/05/dash学习笔记1/" rel="next" title="dash学习笔记1">
+                <i class="fa fa-chevron-left"></i> dash学习笔记1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -348,6 +465,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -534,10 +662,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -555,6 +683,18 @@
       <script id="dsq-count-scr" src="https://jesselog.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://pingf.github.io/2017/07/26/ssh反向代理/';
+          this.page.identifier = '2017/07/26/ssh反向代理/';
+          this.page.title = 'ssh反向代理';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://jesselog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
